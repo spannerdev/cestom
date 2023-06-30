@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.spanner"
-version = "0.1.0"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.minestom);
     implementation(libs.minestomce);
     implementation(libs.bundles.logging)
     implementation(libs.bundles.terminal)

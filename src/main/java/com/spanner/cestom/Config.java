@@ -97,8 +97,8 @@ public class Config {
     public static String getHost() {
         return getHostString();
     }
-    public static short getPort() {
-        return Short.parseShort(getPortString());
+    public static int getPort() {
+        return Integer.parseInt(getPortString());
     }
     public static RunMode getMode() {
         return RunMode.valueOf(getModeString().toUpperCase(Locale.ENGLISH));

@@ -9,11 +9,13 @@ _цестом_ is an implementation of a [minestom-ce](https://github.com/hollow
   - [Configuration](#configuration)
   - [Commands](#commands)
   - [Logging](#logging)
+  - [Extensions](#extensions)
 - [Credits](#credits)
 
 ## Features
 - Stop command
 - Re-added logging implementation
+- Re-added extension manager
 
 ## Usage
 
@@ -45,6 +47,9 @@ velocity.secret=""
 ### Logging
 Logging works in the same way as in the original Minestom. Get the logger from `MinecraftServer.LOGGER`. Supports `Component`s via Minestom's ANSI converter.
 
+### Extensions
+Extensions work exactly the same way as the original implementation. See [the Minestom wiki](https://wiki.minestom.net/expansion/extensions).
+
 ## Credits
-Thanks to [Minestom](https://github.com/Minestom/Minestom) for the excellent software, and also the logging implementation which this project uses  
+Thanks to [Minestom](https://github.com/Minestom/Minestom) for the server, and the extension & logging system this project uses.
 Thanks to the [Hollow Cube](https://github.com/hollow-cube) devs for the Minestom fork
