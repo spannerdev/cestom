@@ -55,6 +55,7 @@ public class Config {
         System.setProperty("minestom.tps", Config.getTpsString());
         System.setProperty("minestom.chunk-view-distance", Config.getChunkViewDistanceString());
         System.setProperty("minestom.entity-view-distance", Config.getEntityViewDistanceString());
+        System.setProperty("minestom.use-new-chunk-sending", Config.getUseNewChunkSendingString());
     }
 
     private static Config getInstance() {
@@ -90,6 +91,9 @@ public class Config {
     private static String getVelocitySecretString() {
         return getInstance().properties().getProperty("velocity.secret");
     }
+    private static String getUseNewChunkSendingString() {
+        return getInstance().properties().getProperty("improvements.chunk-sending");
+    }
 
     public static InetSocketAddress getListenAddress() {
         return new InetSocketAddress(getHost(), getPort());
@@ -115,6 +119,10 @@ public class Config {
     protected static String getVelocitySecret() {
         return getVelocitySecretString();
     }
+    private static boolean getUseNewChunkSending() {
+        return Boolean.parseBoolean(getUseNewChunkSendingString());
+    }
+
 
     public enum RunMode {
         OFFLINE
